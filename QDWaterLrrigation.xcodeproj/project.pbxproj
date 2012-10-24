@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		238C754916377DBC00431746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C754816377DBC00431746 /* UIKit.framework */; };
+		238C754B16377DBC00431746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C754A16377DBC00431746 /* Foundation.framework */; };
+		238C754D16377DBC00431746 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C754C16377DBC00431746 /* CoreGraphics.framework */; };
+		238C755316377DBC00431746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238C755116377DBC00431746 /* InfoPlist.strings */; };
+		238C755516377DBC00431746 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C755416377DBC00431746 /* main.m */; };
+		238C755916377DBC00431746 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C755816377DBC00431746 /* AppDelegate.m */; };
+		238C755C16377DBC00431746 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C755B16377DBC00431746 /* ViewController.m */; };
+		238C755F16377DBC00431746 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 238C755D16377DBC00431746 /* ViewController_iPhone.xib */; };
+		238C756216377DBC00431746 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 238C756016377DBC00431746 /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		238C754416377DBC00431746 /* QDWaterLrrigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QDWaterLrrigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		238C754816377DBC00431746 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		238C754A16377DBC00431746 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		238C754C16377DBC00431746 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		238C755016377DBC00431746 /* QDWaterLrrigation-Info.plist */ = {isa = PBXFileReference; path = "QDWaterLrrigation-Info.plist"; sourceTree = "<group>"; };
+		238C755216377DBC00431746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		238C755416377DBC00431746 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		238C755616377DBC00431746 /* QDWaterLrrigation-Prefix.pch */ = {isa = PBXFileReference; path = "QDWaterLrrigation-Prefix.pch"; sourceTree = "<group>"; };
+		238C755716377DBC00431746 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		238C755816377DBC00431746 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		238C755A16377DBC00431746 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		238C755B16377DBC00431746 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		238C755E16377DBC00431746 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		238C756116377DBC00431746 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		238C754116377DBC00431746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C754916377DBC00431746 /* UIKit.framework in Frameworks */,
+				238C754B16377DBC00431746 /* Foundation.framework in Frameworks */,
+				238C754D16377DBC00431746 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		238C753916377DBC00431746 = {
+			isa = PBXGroup;
+			children = (
+				238C754E16377DBC00431746 /* QDWaterLrrigation */,
+				238C754716377DBC00431746 /* Frameworks */,
+				238C754516377DBC00431746 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		238C754516377DBC00431746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				238C754416377DBC00431746 /* QDWaterLrrigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		238C754716377DBC00431746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238C754816377DBC00431746 /* UIKit.framework */,
+				238C754A16377DBC00431746 /* Foundation.framework */,
+				238C754C16377DBC00431746 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		238C754E16377DBC00431746 /* QDWaterLrrigation */ = {
+			isa = PBXGroup;
+			children = (
+				238C755716377DBC00431746 /* AppDelegate.h */,
+				238C755816377DBC00431746 /* AppDelegate.m */,
+				238C755A16377DBC00431746 /* ViewController.h */,
+				238C755B16377DBC00431746 /* ViewController.m */,
+				238C755D16377DBC00431746 /* ViewController_iPhone.xib */,
+				238C756016377DBC00431746 /* ViewController_iPad.xib */,
+				238C754F16377DBC00431746 /* Supporting Files */,
+			);
+			path = QDWaterLrrigation;
+			sourceTree = "<group>";
+		};
+		238C754F16377DBC00431746 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238C755016377DBC00431746 /* QDWaterLrrigation-Info.plist */,
+				238C755116377DBC00431746 /* InfoPlist.strings */,
+				238C755416377DBC00431746 /* main.m */,
+				238C755616377DBC00431746 /* QDWaterLrrigation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		238C754316377DBC00431746 /* QDWaterLrrigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238C756516377DBC00431746 /* Build configuration list for PBXNativeTarget "QDWaterLrrigation" */;
+			buildPhases = (
+				238C754016377DBC00431746 /* Sources */,
+				238C754116377DBC00431746 /* Frameworks */,
+				238C754216377DBC00431746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QDWaterLrrigation;
+			productName = QDWaterLrrigation;
+			productReference = 238C754416377DBC00431746 /* QDWaterLrrigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		238C753B16377DBC00431746 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 238C753E16377DBC00431746 /* Build configuration list for PBXProject "QDWaterLrrigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 238C753916377DBC00431746;
+			productRefGroup = 238C754516377DBC00431746 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				238C754316377DBC00431746 /* QDWaterLrrigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		238C754216377DBC00431746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C755316377DBC00431746 /* InfoPlist.strings in Resources */,
+				238C755F16377DBC00431746 /* ViewController_iPhone.xib in Resources */,
+				238C756216377DBC00431746 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		238C754016377DBC00431746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C755516377DBC00431746 /* main.m in Sources */,
+				238C755916377DBC00431746 /* AppDelegate.m in Sources */,
+				238C755C16377DBC00431746 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		238C755116377DBC00431746 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238C755216377DBC00431746 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		238C755D16377DBC00431746 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238C755E16377DBC00431746 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		238C756016377DBC00431746 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238C756116377DBC00431746 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		238C756316377DBC00431746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		238C756416377DBC00431746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		238C756616377DBC00431746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QDWaterLrrigation/QDWaterLrrigation-Prefix.pch";
+				INFOPLIST_FILE = "QDWaterLrrigation/QDWaterLrrigation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		238C756716377DBC00431746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QDWaterLrrigation/QDWaterLrrigation-Prefix.pch";
+				INFOPLIST_FILE = "QDWaterLrrigation/QDWaterLrrigation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		238C753E16377DBC00431746 /* Build configuration list for PBXProject "QDWaterLrrigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238C756316377DBC00431746 /* Debug */,
+				238C756416377DBC00431746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238C756516377DBC00431746 /* Build configuration list for PBXNativeTarget "QDWaterLrrigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238C756616377DBC00431746 /* Debug */,
+				238C756716377DBC00431746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 238C753B16377DBC00431746 /* Project object */;
+}
