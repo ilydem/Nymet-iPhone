@@ -1,0 +1,147 @@
+
+
+#import "QDTableViewCell.h"
+
+@implementation QDTableViewCell
+@synthesize cellImageView;
+@synthesize cellBgImage;
+@synthesize number_laber;
+@synthesize imageView;
+@synthesize current_laber;
+@synthesize average_laber;
+@synthesize weather_laber;
+@synthesize largestProgressView;
+@synthesize number_label;
+@synthesize Error_laber;
+@synthesize delegate;
+
+-(void)clicksummaryImage
+{
+    UIActionSheet *actionSheetView = [[UIActionSheet alloc] initWithTitle:@"Set Image"
+                                                                 delegate:self
+                                                        cancelButtonTitle:@"Cancel"
+                                                   destructiveButtonTitle:@"Photograph"
+                                                        otherButtonTitles:@"Local Photos",nil];
+    [actionSheetView showInView:self];
+    [actionSheetView autorelease];
+}
+- (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    switch (buttonIndex) {
+        case 0:
+            [delegate summaryclickdifferentcellImage:self];
+            break;
+        case 1:
+            [delegate summaryselectlocationImage:self];
+            
+        default:
+            break;
+    }
+    
+    
+}
+-(void)clickImageViewgotoCamerachanganSummary
+{
+    [delegate summaryclickimageView:cellImageView.image];
+}
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        
+        //cell的背景
+        
+        imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+        [self addSubview:imageView];
+        [imageView release];
+        
+        
+        //图片
+        cellImageView=[[UIImageView alloc]initWithFrame:CGRectMake(30, 5, 40, 40)];
+        cellImageView.image=[UIImage imageNamed:@"imgview@2x.png"];
+        [cellImageView setUserInteractionEnabled:YES];
+        cellImageView.layer.cornerRadius = 5;
+        cellImageView.layer.masksToBounds = YES;
+        [self addSubview:cellImageView];
+        [cellImageView release];
+        
+        UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clicksummaryImage)];
+        [cellImageView addGestureRecognizer:tap];
+        [tap release];
+        
+        UILongPressGestureRecognizer *summary_tap=[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(clickImageViewgotoCamerachanganSummary)];
+        [cellImageView addGestureRecognizer:summary_tap];
+        [summary_tap release];
+
+        
+        
+        //current
+        current_laber=[[UILabel alloc]initWithFrame:CGRectMake(75, 15, 40, 20)];
+        current_laber.textAlignment=NSTextAlignmentCenter;
+        current_laber.font=[UIFont systemFontOfSize:12];
+        current_laber.backgroundColor=[UIColor clearColor];
+        [self addSubview:current_laber];
+        [current_laber release];
+        
+        //average
+        average_laber=[[UILabel alloc]initWithFrame:CGRectMake(125, 15, 40, 20)];
+        average_laber.textAlignment=NSTextAlignmentCenter;
+        average_laber.font=[UIFont systemFontOfSize:12];
+        average_laber.backgroundColor=[UIColor clearColor];
+        [self addSubview:average_laber];
+        [average_laber release];
+        
+        //Weather
+        weather_laber=[[UILabel alloc]initWithFrame:CGRectMake(170, 15, 40, 20)];
+        weather_laber.textAlignment=NSTextAlignmentCenter;
+        weather_laber.font=[UIFont systemFontOfSize:12];
+        weather_laber.backgroundColor=[UIColor clearColor];
+        [self addSubview:weather_laber];
+        [weather_laber release];
+        
+        
+        largestProgressView = [[DACircularProgressView alloc] initWithFrame:CGRectMake(210, 5, 40, 40)];
+        
+        [self addSubview:largestProgressView];
+        [largestProgressView release];
+        
+        
+        
+        
+        number_label=[[UILabel alloc]initWithFrame:CGRectMake(0, 10, 40, 20)];
+        number_label.textAlignment=NSTextAlignmentCenter;
+        number_label.font=[UIFont systemFontOfSize:15];
+        number_label.backgroundColor=[UIColor clearColor];
+        [largestProgressView addSubview:number_label];
+        [number_label release];
+        
+        
+        
+        //error
+        Error_laber=[[UILabel alloc]initWithFrame:CGRectMake(255, 15, 60, 20)];
+        Error_laber.textAlignment=NSTextAlignmentCenter;
+        Error_laber.font=[UIFont systemFontOfSize:15];
+        Error_laber.backgroundColor=[UIColor clearColor];
+        [self addSubview:Error_laber];
+        [Error_laber release];
+        
+        
+        number_laber=[[UILabel alloc]initWithFrame:CGRectMake(10, 15, 20, 20)];
+        number_laber.backgroundColor=[UIColor clearColor];
+        [self addSubview:number_laber];
+        [number_laber release];
+        
+        
+        
+    }
+    return self;
+}
+
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    [super setSelected:selected animated:animated];
+}
+
+@end

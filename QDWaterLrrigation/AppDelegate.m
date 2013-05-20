@@ -1,10 +1,4 @@
-//
-//  AppDelegate.m
-//  QDWaterLrrigation
-//
-//  Created by Mako on 12-10-24.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
 
@@ -22,17 +16,26 @@
     [super dealloc];
 }
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil] autorelease];
-    } else {
-        self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil] autorelease];
+    
+    self.viewController=[[[ViewController alloc]init]autorelease];
+
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"httpIPAddress"]==nil ||[[[NSUserDefaults standardUserDefaults] objectForKey:@"httpIPAddress"] isEqualToString:@""])
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:@"192.168.0.134:8080" forKey:@"httpIPAddress"];
     }
-    self.window.rootViewController = self.viewController;
+
+
+    UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:self.viewController];
+    nav.navigationBarHidden=YES;
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    [NSThread sleepForTimeInterval:1];
+    [nav release];
     return YES;
 }
 
@@ -50,6 +53,8 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+    NSNotificationCenter *noc = [NSNotificationCenter defaultCenter];
+    [noc postNotificationName:@"RefreshNow" object:nil];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
