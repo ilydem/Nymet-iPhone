@@ -15,7 +15,7 @@
 		<string>waterilcon.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>QiDian.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>ru.allref.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

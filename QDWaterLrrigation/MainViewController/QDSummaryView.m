@@ -226,7 +226,7 @@
         
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.5];
-        imageview.frame =CGRectMake(self.frame.size.width/2-100, self.frame.size.height/2-100, 200, 200);
+        imageview.frame =CGRectMake(self.frame.size.width/2-150, self.frame.size.height/2-150, 300, 300);
         [UIView setAnimationDelegate:self];
         [UIView commitAnimations];
         
