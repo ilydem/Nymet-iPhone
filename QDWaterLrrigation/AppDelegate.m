@@ -26,7 +26,7 @@
 
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"httpIPAddress"]==nil ||[[[NSUserDefaults standardUserDefaults] objectForKey:@"httpIPAddress"] isEqualToString:@""])
     {
-        [[NSUserDefaults standardUserDefaults] setObject:@"192.168.0.134:8080" forKey:@"httpIPAddress"];
+        [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.111:8080" forKey:@"httpIPAddress"];
     }
 
 
