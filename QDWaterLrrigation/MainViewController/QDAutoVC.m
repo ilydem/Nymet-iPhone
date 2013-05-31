@@ -836,7 +836,7 @@
     //xingqi
     for (int i=0; i<7; i++)
     {
-        UIButton*program_label_qingqi=[[UIButton alloc]initWithFrame:CGRectMake(15+i*43, 110, 30, 30)];
+        UIButton*program_label_qingqi=[[UIButton alloc]initWithFrame:CGRectMake(3+i*45, 110, 44, 40)];
 //        if (i==0)
 //        {
 //            program_label_qingqi.frame=CGRectMake(134, 95, 25, 20);
@@ -889,6 +889,12 @@
 //        [program_label_qingqi setTitle:[mutarr objectAtIndex:i] forState:UIControlStateNormal];
 //        program_label_qingqi.titleLabel.font=[UIFont systemFontOfSize:12];
 //        [program_label_qingqi setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        
+//        program_label_qingqi.layer.borderWidth=1;
+//        program_label_qingqi.layer.borderColor=[UIColor redColor].CGColor;
+        UIEdgeInsets imageInsets = UIEdgeInsetsMake(5.0, 7.0, 5.0, 7.0);
+        program_label_qingqi.imageEdgeInsets = imageInsets;
+        
         program_label_qingqi.backgroundColor=[UIColor clearColor];
         program_label_qingqi.titleLabel.textAlignment=NSTextAlignmentCenter;
         [program_label_qingqi addTarget:self action:@selector(clickdatebt:) forControlEvents:UIControlEventTouchUpInside];
