@@ -870,7 +870,7 @@
                 [program_label_qingqi setImage:[UIImage imageNamed:@" btn_2q.png"] forState:UIControlStateHighlighted];
                 break;
             case 3:
-                [program_label_qingqi setImage:[UIImage imageNamed:@"btn_3q.png"] forState:UIControlStateHighlighted];
+                [program_label_qingqi setImage:[UIImage imageNamed:@" btn_3q.png"] forState:UIControlStateHighlighted];
                 break;
             case 4:
                 [program_label_qingqi setImage:[UIImage imageNamed:@" btn_4q.png"] forState:UIControlStateHighlighted];
