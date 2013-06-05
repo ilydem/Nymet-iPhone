@@ -192,13 +192,13 @@
         if (self)
         {
             //cell的背景
-            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
-            [imageView setImage:[UIImage imageNamed:@"allstatebar.png"]];
+            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];
+            [imageView setImage:[UIImage imageNamed:@"ID_allstatebar.png"]];
             [self addSubview:imageView];
             [imageView release];
             
             //图片
-            cellImageView=[[UIImageView alloc]initWithFrame:CGRectMake(30, 5, 40, 40)];
+            cellImageView=[[UIImageView alloc]initWithFrame:CGRectMake(5, 10, 80, 80)];
             cellImageView.image=[UIImage imageNamed:@"imgview@2x.png"];
             [cellImageView setUserInteractionEnabled:YES];
             cellImageView.layer.cornerRadius = 5;
@@ -216,7 +216,7 @@
             
             
             //on off
-            ON_OFF_Sw=[[DCRoundSwitch alloc]initWithFrame:CGRectMake(85, 10, 70, 25)];
+            ON_OFF_Sw=[[DCRoundSwitch alloc]initWithFrame:CGRectMake(95, 40, 70, 25)];
             ON_OFF_Sw.tag=3;
             ON_OFF_Sw.onText=@"ON";
             ON_OFF_Sw.offText=@"OFF";
@@ -225,7 +225,7 @@
             [ON_OFF_Sw release];
             
             //mist
-            Mist_cont =[[DCRoundSwitch alloc]initWithFrame:CGRectMake(165,10, 70, 25)];
+            Mist_cont =[[DCRoundSwitch alloc]initWithFrame:CGRectMake(175,40, 70, 25)];
             Mist_cont.tag=4;
             Mist_cont.onText=@"Mist";
             Mist_cont.offText=@"Cont";
@@ -234,7 +234,7 @@
             
             
             
-            largestProgressView = [[DACircularProgressView alloc] initWithFrame:CGRectMake(250, 5, 40, 40)];
+            largestProgressView = [[DACircularProgressView alloc] initWithFrame:CGRectMake(260, 33, 40, 40)];
             largestProgressView.tag=5;
             
             [self addSubview:largestProgressView];

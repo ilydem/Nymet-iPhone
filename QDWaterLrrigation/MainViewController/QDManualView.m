@@ -43,7 +43,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return 50.0;
+    return 100.0;
     
 }
 -(void)clickmistcontswBT:(UISwitch *)sw
@@ -163,9 +163,20 @@
         
         
         //前面的数字
-        UILabel*number_laber=[[UILabel alloc]initWithFrame:CGRectMake(10, 15, 20, 20)];
+        UILabel*number_laber=[UILabel alloc];
+        if ([indexPath row]+1==10) {
+            [number_laber initWithFrame:CGRectMake(10, 15, 21, 20)];
+            number_laber.textAlignment = NSTextAlignmentLeft;
+        }
+        else {
+            [number_laber initWithFrame:CGRectMake(10, 15, 20, 20)];
+            number_laber.textAlignment = NSTextAlignmentCenter;
+        }
+        number_laber.backgroundColor=[UIColor whiteColor];
+        number_laber.layer.cornerRadius = 5;
+        number_laber.layer.masksToBounds = YES;
         number_laber.text=[NSString stringWithFormat:@"%d",[indexPath row]+1];
-        number_laber.backgroundColor=[UIColor clearColor];
+        number_laber.backgroundColor=[UIColor whiteColor];
         [cel addSubview:number_laber];
         [number_laber release];
         
