@@ -130,6 +130,7 @@
 		23FE55BD16B8FDE60037139E /* btn_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 23FE55BA16B8FDE60037139E /* btn_stop.png */; };
 		23FE55C316B90FF50037139E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FE55C216B90FF50037139E /* AudioToolbox.framework */; };
 		23FE55C616B910490037139E /* QDSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FE55C516B910490037139E /* QDSystem.m */; };
+		D099227A1758B9B90031DF09 /* watericon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = D09922791758B9B90031DF09 /* watericon57x57.png */; };
 		F0089D4E16BBCA5C0033ED5B /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = F0089D4D16BBCA5C0033ED5B /* tap.aif */; };
 		F0178D1416BCA63C00B30A8B /* res_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = F0178D1316BCA63C00B30A8B /* res_cancel.png */; };
 		F064FFA5171661FA0015841A /* QDDetectServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F064FFA4171661FA0015841A /* QDDetectServer.m */; };
@@ -294,6 +295,7 @@
 		23FE55C216B90FF50037139E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		23FE55C416B910490037139E /* QDSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSystem.h; sourceTree = "<group>"; };
 		23FE55C516B910490037139E /* QDSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSystem.m; sourceTree = "<group>"; };
+		D09922791758B9B90031DF09 /* watericon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watericon57x57.png; path = QDResources/Image/watericon57x57.png; sourceTree = "<group>"; };
 		F0089D4D16BBCA5C0033ED5B /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.aif; sourceTree = "<group>"; };
 		F0178D1316BCA63C00B30A8B /* res_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = res_cancel.png; path = QDResources/Image/res_cancel.png; sourceTree = "<group>"; };
 		F064FFA3171661FA0015841A /* QDDetectServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QDDetectServer.h; path = NetData/QDDetectServer.h; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 				23FE558B16B8CCB10037139E /* btn_stopactive.png */,
 				23FE558C16B8CCB10037139E /* btn_stopnormal.png */,
 				23FE558D16B8CCB10037139E /* icon_weather.png */,
+				D09922791758B9B90031DF09 /* watericon57x57.png */,
 				23D24DAD169D51E700E0DCAA /* masterw1.png */,
 				234E50F916AE6AA2005F750F /* icon_weather.png */,
 				23D24DAE169D51E700E0DCAA /* masterw2.png */,
@@ -753,6 +756,7 @@
 				23D880F71700464F0020349E /* off_normal.png in Resources */,
 				23D880F81700464F0020349E /* on_active.png in Resources */,
 				23D880F91700464F0020349E /* on_normal.png in Resources */,
+				D099227A1758B9B90031DF09 /* watericon57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,7 +873,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Peter Caretti (58474S847N)";
+				CODE_SIGN_ENTITLEMENTS = "iPhone Distribution: Peter Caretti (RV359S38W9)\n60E609DB-0DEB-47C1-8DD8-E8F9F0BFD55A";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Peter Caretti (RV359S38W9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -878,7 +883,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "EE33B49B-0B0A-41FE-82EB-8F5F4D5AD65A";
+				PROVISIONING_PROFILE = "60E609DB-0DEB-47C1-8DD8-E8F9F0BFD55A";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -903,13 +908,14 @@
 		238C756716377DBC00431746 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Peter Caretti (58474S847N)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Peter Caretti (RV359S38W9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QDWaterLrrigation/QDWaterLrrigation-Prefix.pch";
 				INFOPLIST_FILE = "QDWaterLrrigation/QDWaterLrrigation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EA8CC408-2F63-4CFB-8505-4BAB873F977A";
+				PROVISIONING_PROFILE = "60E609DB-0DEB-47C1-8DD8-E8F9F0BFD55A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

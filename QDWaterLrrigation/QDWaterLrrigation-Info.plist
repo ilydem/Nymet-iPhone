@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Nymet irrigation</string>
+	<string>Nymet Irrigation</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
@@ -13,6 +13,7 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>waterilcon.png</string>
+		<string>watericon57x57.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>ru.allref.${PRODUCT_NAME:rfc1034identifier}</string>
