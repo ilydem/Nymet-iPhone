@@ -49,7 +49,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return 50.0;
+    return 100.0;
     
 }
 -(void)clickErrorBTSummary
@@ -65,10 +65,10 @@
     
     if (cell == nil)
     {
-        cell=[[QDTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        [cellImageArray addObject:cell.cellImageView];
+        cell=[QDTableViewCell alloc];
         cell.tag=[indexPath row]+1;
-        
+        [cell initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        [cellImageArray addObject:cell.cellImageView];        
     }
     
  
@@ -81,13 +81,13 @@
         }
         else
         {
-            cell.imageView.image = [UIImage imageNamed:@"allstatebar.png"];
+            cell.imageView.image = [UIImage imageNamed:@"ID_allstatebar.png"];
         }
         
     }
     else
     {
-        cell.imageView.image = [UIImage imageNamed:@"allstatebar.png"];
+        cell.imageView.image = [UIImage imageNamed:@"ID_allstatebar.png"];
     }
     
     NSLog(@"[im_Data count][im_Data count]%d",[im_Data count]);

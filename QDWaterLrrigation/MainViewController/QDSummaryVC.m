@@ -730,7 +730,7 @@
     [program_label release];
     
     //Master
-    current_label=[[UILabel alloc]initWithFrame:CGRectMake(75, 142, 40, 20)];
+    current_label=[[UILabel alloc]initWithFrame:CGRectMake(95, 142, 40, 20)];
     current_label.backgroundColor=[UIColor clearColor];
     current_label.textAlignment =NSTextAlignmentCenter;
     current_label.font=[UIFont systemFontOfSize:12];

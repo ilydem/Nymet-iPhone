@@ -52,16 +52,16 @@
         
         //cell的背景
         
-        imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+        imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];
         [self addSubview:imageView];
         [imageView release];
         
         
         //图片
-        cellImageView=[[UIImageView alloc]initWithFrame:CGRectMake(30, 5, 40, 40)];
+        cellImageView=[[UIImageView alloc]initWithFrame:CGRectMake(5, 10, 80, 80)];
         cellImageView.image=[UIImage imageNamed:@"imgview@2x.png"];
         [cellImageView setUserInteractionEnabled:YES];
-        cellImageView.layer.cornerRadius = 5;
+        cellImageView.layer.cornerRadius = 10;
         cellImageView.layer.masksToBounds = YES;
         [self addSubview:cellImageView];
         [cellImageView release];
@@ -77,7 +77,7 @@
         
         
         //current
-        current_laber=[[UILabel alloc]initWithFrame:CGRectMake(75, 15, 40, 20)];
+        current_laber=[[UILabel alloc]initWithFrame:CGRectMake(95, 40, 40, 20)];
         current_laber.textAlignment=NSTextAlignmentCenter;
         current_laber.font=[UIFont systemFontOfSize:12];
         current_laber.backgroundColor=[UIColor clearColor];
@@ -85,7 +85,7 @@
         [current_laber release];
         
         //average
-        average_laber=[[UILabel alloc]initWithFrame:CGRectMake(125, 15, 40, 20)];
+        average_laber=[[UILabel alloc]initWithFrame:CGRectMake(125, 40, 40, 20)];
         average_laber.textAlignment=NSTextAlignmentCenter;
         average_laber.font=[UIFont systemFontOfSize:12];
         average_laber.backgroundColor=[UIColor clearColor];
@@ -93,7 +93,7 @@
         [average_laber release];
         
         //Weather
-        weather_laber=[[UILabel alloc]initWithFrame:CGRectMake(170, 15, 40, 20)];
+        weather_laber=[[UILabel alloc]initWithFrame:CGRectMake(170, 40, 40, 20)];
         weather_laber.textAlignment=NSTextAlignmentCenter;
         weather_laber.font=[UIFont systemFontOfSize:12];
         weather_laber.backgroundColor=[UIColor clearColor];
@@ -101,7 +101,7 @@
         [weather_laber release];
         
         
-        largestProgressView = [[DACircularProgressView alloc] initWithFrame:CGRectMake(210, 5, 40, 40)];
+        largestProgressView = [[DACircularProgressView alloc] initWithFrame:CGRectMake(210, 30, 40, 40)];
         
         [self addSubview:largestProgressView];
         [largestProgressView release];
@@ -119,7 +119,7 @@
         
         
         //error
-        Error_laber=[[UILabel alloc]initWithFrame:CGRectMake(255, 15, 60, 20)];
+        Error_laber=[[UILabel alloc]initWithFrame:CGRectMake(255, 40, 60, 20)];
         Error_laber.textAlignment=NSTextAlignmentCenter;
         Error_laber.font=[UIFont systemFontOfSize:15];
         Error_laber.backgroundColor=[UIColor clearColor];
@@ -127,8 +127,17 @@
         [Error_laber release];
         
         
-        number_laber=[[UILabel alloc]initWithFrame:CGRectMake(10, 15, 20, 20)];
-        number_laber.backgroundColor=[UIColor clearColor];
+        if (self.tag==10) {
+            number_laber=[[UILabel alloc]initWithFrame:CGRectMake(10, 15, 21, 20)];
+            number_laber.textAlignment = NSTextAlignmentLeft;
+        }
+        else {
+            number_laber=[[UILabel alloc]initWithFrame:CGRectMake(10, 15, 20, 20)];
+            number_laber.textAlignment = NSTextAlignmentCenter;
+        }
+        number_laber.backgroundColor=[UIColor whiteColor];
+        number_laber.layer.cornerRadius = 5;
+        number_laber.layer.masksToBounds = YES;
         [self addSubview:number_laber];
         [number_laber release];
         
